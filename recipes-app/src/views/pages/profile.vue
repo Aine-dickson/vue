@@ -1,0 +1,3 @@
+<template>
+    Profile data loading...
+</template>

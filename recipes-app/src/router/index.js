@@ -17,14 +17,19 @@ const routes = [
         component: () => import('@/views/pages/fav.vue')
       },
       {
-        path: '/finished',
-        name: 'tried',
-        component: () => import('@/views/pages/tried.vue')
+        path: '/history',
+        name: 'history',
+        component: () => import('@/views/pages/history.vue')
       },
       { 
         path: '/settings',
         name: 'settings',
         component: () => import('@/views/pages/settings.vue')
+      },
+      { 
+        path: '/profile',
+        name: 'profile',
+        component: () => import('@/views/pages/profile.vue')
       },
     ]
   },

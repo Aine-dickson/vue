@@ -3,16 +3,16 @@
         <header class="bg-green-500">
             <app_header></app_header>
         </header>
-        <nav class="hidden md:block bg-red-500">
+        <nav class="hidden md:block">
             <app_nav></app_nav>
         </nav>
-        <main class="bg-blue-500">
+        <main>
             <app_main></app_main>
         </main>
-        <aside class="hidden md:block bg-red-500">
+        <aside class="hidden md:block">
             <app_aside></app_aside>
         </aside>
-        <footer class="md:hidden bg-green-500">
+        <footer class="md:hidden">
             <app_footer></app_footer>
         </footer>
     </div>
@@ -47,7 +47,7 @@
         'main main main main main main main main main main main main'
         'footer footer footer footer footer footer footer footer footer footer footer footer';
     }
-    @media screen and (min-width: 783px) {
+    @media screen and (min-width: 768px) {
         .container{
             grid-template-columns: repeat(12, 1fr);
             grid-template-rows: 10% 90%;
