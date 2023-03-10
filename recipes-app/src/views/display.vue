@@ -6,7 +6,7 @@
         <nav class="hidden md:block">
             <app_nav></app_nav>
         </nav>
-        <main>
+        <main class="max-h-full overflow-auto">
             <app_main></app_main>
         </main>
         <aside class="hidden md:block">
