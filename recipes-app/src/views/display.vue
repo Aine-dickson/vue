@@ -7,7 +7,7 @@
             <app_nav></app_nav>
         </nav>
         <main class="max-h-full overflow-auto">
-            <app_main></app_main>
+            <app_main @idBroadCast="conso"></app_main>
         </main>
         <aside class="hidden md:block">
             <app_aside></app_aside>
@@ -27,6 +27,9 @@
     import app_main from "@/views/includes/main.vue";
 
     export default{
+        // data:()=>({
+        //         id: ''
+        // }),
         components: {
             app_aside,
             app_footer,
@@ -34,6 +37,13 @@
             app_main,
             app_nav
         },
+        setup(){
+            function conso(id){
+                console.log(`Recipe with id has been clicked`)
+            }
+
+            return {conso}
+        }
     }
 
 </script>
